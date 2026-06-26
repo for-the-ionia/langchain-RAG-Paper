@@ -23,10 +23,7 @@
 │   └── schemas.py       # API 请求/响应模型
 ├── scripts/
 │   └── ingest.py        # 构建/重建向量库
-├── data/                # 可放 Excel 数据文件
-├── storage/chroma/      # Chroma 向量库持久化目录
-├── .env.example
-└── requirements.txt
+└── storage/chroma/      # Chroma 向量库持久化目录
 ```
 
 ## 安装
@@ -54,13 +51,13 @@ QWEN_API_KEY=你的DashScope_API_Key
 你给出的文件路径是：
 
 ```text
-C:\Users\choej\Desktop\4个期刊.xlsx
+C:\Users\XXXXX\XXXXXX\期刊.xlsx
 ```
 
 运行入库脚本：
 
 ```bash
-python -m scripts.ingest --excel "C:\Users\choej\Desktop\4个期刊.xlsx" --recreate
+python -m scripts.ingest --excel "C:\Users\XXXXX\XXXXXX\期刊.xlsx" --recreate
 ```
 
 Excel 支持以下字段名，会自动识别：
